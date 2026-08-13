@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-white font-sans antialiased;
+  }
+
+  /* Offset anchor targets so section headings aren't hidden under the fixed navbar */
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply mx-auto w-full max-w-5xl px-6 py-20 sm:px-8 md:py-28;
+  }
+
+  .section-label {
+    @apply mb-3 font-mono text-sm tracking-widest text-accent;
+  }
+
+  .section-heading {
+    @apply text-3xl font-semibold tracking-tight sm:text-4xl;
+  }
+}
