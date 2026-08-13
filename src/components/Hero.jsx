@@ -41,43 +41,58 @@ export default function Hero() {
       />
 
       <div className="section-container">
-        <p className="section-label">Electrical Engineering Student @ CMU</p>
-        <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-tight sm:text-6xl">
-          Hi, I'm <span className="text-accent">Ugonna</span>.
-          <br />
-          I build hardware that actually works.
-        </h1>
-        <p className="mt-6 max-w-xl text-lg text-white/60">
-          EE student at Central Michigan University focused on robotics,
-          embedded systems, and PCB design. I bridge the gap between circuit
-          boards and autonomous systems.
-        </p>
+        <div className="flex flex-col md:flex-row items-center gap-12">
+          {/* Left column — text content */}
+          <div className="md:w-3/5">
+            <p className="section-label">Electrical Engineering Student @ CMU</p>
+            <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-tight sm:text-6xl">
+              Hi, I'm <span className="text-accent">Ugonna</span>.
+              <br />
+              I build hardware that actually works.
+            </h1>
+            <p className="mt-6 max-w-xl text-lg text-white/60">
+              EE student at Central Michigan University focused on robotics,
+              embedded systems, and PCB design. I bridge the gap between circuit
+              boards and autonomous systems.
+            </p>
 
-        {/* Cycling animated tag */}
-        <div className="mt-8 flex items-center gap-3 font-mono text-sm">
-          <span className="text-white/40">Focus:</span>
-          <span
-            className={`text-accent transition-opacity duration-300 ${
-              visible ? 'opacity-100' : 'opacity-0'
-            }`}
-          >
-            {cyclingTags[index]}
-          </span>
-        </div>
+            {/* Cycling animated tag */}
+            <div className="mt-8 flex items-center gap-3 font-mono text-sm">
+              <span className="text-white/40">Focus:</span>
+              <span
+                className={`text-accent transition-opacity duration-300 ${
+                  visible ? 'opacity-100' : 'opacity-0'
+                }`}
+              >
+                {cyclingTags[index]}
+              </span>
+            </div>
 
-        <div className="mt-10 flex flex-wrap gap-4">
-          <a
-            href="#projects"
-            className="rounded-md bg-accent px-6 py-3 text-sm font-medium text-background transition-opacity hover:opacity-90"
-          >
-            View Projects
-          </a>
-          <a
-            href="#contact"
-            className="rounded-md border border-white/15 px-6 py-3 text-sm font-medium text-white transition-colors hover:border-accent hover:text-accent"
-          >
-            Get in Touch
-          </a>
+            <div className="mt-10 flex flex-wrap gap-4">
+              <a
+                href="#projects"
+                className="rounded-md bg-accent px-6 py-3 text-sm font-medium text-background transition-opacity hover:opacity-90"
+              >
+                View Projects
+              </a>
+              <a
+                href="#contact"
+                className="rounded-md border border-white/15 px-6 py-3 text-sm font-medium text-white transition-colors hover:border-accent hover:text-accent"
+              >
+                Get in Touch
+              </a>
+            </div>
+          </div>
+
+          {/* Right column — profile photo (desktop only) */}
+          <div className="hidden md:flex items-center justify-center md:w-2/5">
+            <img
+              src="/ugonna.jpg"
+              alt="Ugonna Emeka-Inegbu"
+              className="w-52 h-52 rounded-full object-cover border-2 border-accent"
+              style={{ boxShadow: '0 0 30px rgba(0, 255, 136, 0.3)' }}
+            />
+          </div>
         </div>
       </div>
     </section>

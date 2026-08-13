@@ -7,7 +7,12 @@
       "PowerShell(python -c \"import PIL; print\\('Pillow', PIL.__version__\\)\" 2>&1)",
       "PowerShell(python -m pip install --quiet Pillow 2>&1)",
       "PowerShell(python -c \"import PIL; print\\('Pillow', PIL.__version__\\)\")",
-      "PowerShell(python \"C:\\\\Users\\\\ugoei\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-ugoei-OneDrive-Desktop-Portfolio-Website\\\\0db19cd4-75b2-4e62-8558-bb91c29cf502\\\\scratchpad\\\\make_og.py\")"
+      "PowerShell(python \"C:\\\\Users\\\\ugoei\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-ugoei-OneDrive-Desktop-Portfolio-Website\\\\0db19cd4-75b2-4e62-8558-bb91c29cf502\\\\scratchpad\\\\make_og.py\")",
+      "WebFetch(domain:ugonna-builds-portfolio.netlify.app)",
+      "Bash(mv -f car_circuit.png rc-car-breadboard.png)",
+      "Bash(mv -f car-pcb.png rc-car-pcb.png)",
+      "Bash(mv -f ugonna.JPG ugonna_tmp.jpg)",
+      "Bash(mv -f ugonna_tmp.jpg ugonna.jpg)"
     ]
   }
 }
