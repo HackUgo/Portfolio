@@ -2,7 +2,12 @@
   "permissions": {
     "allow": [
       "Bash(npm --version)",
-      "PowerShell($paths = @\\(\"$env:ProgramFiles\\\\nodejs\\\\node.exe\", \"${env:ProgramFiles\\(x86\\)}\\\\nodejs\\\\node.exe\", \"$env:LOCALAPPDATA\\\\Programs\\\\nodejs\\\\node.exe\", \"$env:APPDATA\\\\npm\\\\node.exe\"\\); foreach \\($p in $paths\\) { if \\(Test-Path $p\\) { Write-Output \"FOUND: $p\" } }; Get-Command node -ErrorAction SilentlyContinue | Select-Object Source)"
+      "PowerShell($paths = @\\(\"$env:ProgramFiles\\\\nodejs\\\\node.exe\", \"${env:ProgramFiles\\(x86\\)}\\\\nodejs\\\\node.exe\", \"$env:LOCALAPPDATA\\\\Programs\\\\nodejs\\\\node.exe\", \"$env:APPDATA\\\\npm\\\\node.exe\"\\); foreach \\($p in $paths\\) { if \\(Test-Path $p\\) { Write-Output \"FOUND: $p\" } }; Get-Command node -ErrorAction SilentlyContinue | Select-Object Source)",
+      "PowerShell($tools = @\\('python','python3','magick','convert','inkscape','node'\\); foreach \\($t in $tools\\) { $c = Get-Command $t -ErrorAction SilentlyContinue; if \\($c\\) { Write-Output \"$t -> $\\($c.Source\\)\" } else { Write-Output \"$t -> NOT FOUND\" } })",
+      "PowerShell(python -c \"import PIL; print\\('Pillow', PIL.__version__\\)\" 2>&1)",
+      "PowerShell(python -m pip install --quiet Pillow 2>&1)",
+      "PowerShell(python -c \"import PIL; print\\('Pillow', PIL.__version__\\)\")",
+      "PowerShell(python \"C:\\\\Users\\\\ugoei\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-ugoei-OneDrive-Desktop-Portfolio-Website\\\\0db19cd4-75b2-4e62-8558-bb91c29cf502\\\\scratchpad\\\\make_og.py\")"
     ]
   }
 }
