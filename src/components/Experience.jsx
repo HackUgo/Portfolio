@@ -13,9 +13,9 @@ const experience = [
   },
   {
     role: 'Product Design Instructor',
-    company: 'Girls in Engineering Academy, CMU',
+    company: 'ESD Girls in Engineering Academy, CMU',
     location: 'Mt Pleasant, MI',
-    period: 'June 2026 – July 2026',
+    period: 'July 2026 – August 2026',
     bullets: [
       'Designed and delivered 3-week Arduino-based underwater ROV curriculum for high school students across 4 teams',
       'Covered embedded systems, sensor integration, and motor control',

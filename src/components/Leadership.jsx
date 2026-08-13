@@ -2,21 +2,21 @@ const leadership = [
   {
     title: 'Founder & President',
     org: 'Applied Robotics Engineering Club — CMU',
-    period: '2026 – Present',
+    period: 'May 2026 – Present',
     description:
       "Founded CMU's first dedicated robotics engineering club. Assembled 7-person founding board with two faculty advisors. Developing mechatronics and autonomous systems curriculum.",
   },
   {
     title: 'Project Management Chair',
     org: 'IEEE — CMU',
-    period: 'Aug 2024 – Present',
+    period: 'Aug 2024 – May 2026',
     description:
       'Organize PCB design and embedded systems workshops. Oversee student project development across the chapter.',
   },
   {
     title: 'Treasurer',
     org: 'Drone Club — CMU',
-    period: 'Aug 2024 – Present',
+    period: 'Aug 2025 – May 2026',
     description:
       'Lead collaborative drone design projects and manage club budget.',
   },
@@ -32,7 +32,7 @@ const leadership = [
     org: 'Student Food Pantry — CMU',
     period: 'Jan 2024 – Present',
     description:
-      'Coordinate weekly food distribution serving 400+ students. Manage volunteer scheduling and donor partnerships.',
+      'Coordinate weekly food distribution events serving 400+ students experiencing food insecurity. Manage volunteer scheduling, inventory, and partnerships with local organizations including Aldi.',
   },
 ]
 

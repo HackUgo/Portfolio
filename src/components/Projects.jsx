@@ -116,7 +116,7 @@ export default function Projects() {
         <p className="section-label">01 — Projects</p>
         <h2 className="section-heading">Selected Work</h2>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2">
+        <div className="mt-12 grid items-start gap-6 sm:grid-cols-2">
           {projects.map((project) => (
             <article
               key={project.title}

@@ -20,12 +20,21 @@ export default function Contact() {
           builder, let's connect.
         </p>
 
-        <a
-          href="mailto:emeka1uv@cmich.edu"
-          className="mt-8 inline-block rounded-md bg-accent px-8 py-3 text-sm font-medium text-background transition-opacity hover:opacity-90"
-        >
-          Say Hello
-        </a>
+        <div className="mt-8 flex flex-col items-center gap-4">
+          <a
+            href="mailto:emeka1uv@cmich.edu"
+            className="inline-block rounded-md bg-accent px-8 py-3 text-sm font-medium text-background transition-opacity hover:opacity-90"
+          >
+            Say Hello
+          </a>
+          <a
+            href="/resume.pdf"
+            download="Ugonna_Emeka-Inegbu_Resume.pdf"
+            className="mt-4 inline-block border-2 border-accent text-accent px-8 py-3 rounded-lg hover:bg-accent hover:text-black transition-colors font-mono"
+          >
+            Download Resume
+          </a>
+        </div>
 
         <ul className="mt-10 flex justify-center gap-8">
           {socials.map((social) => (
